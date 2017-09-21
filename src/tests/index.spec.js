@@ -92,7 +92,7 @@ describe('autocomplete dropdown', () => {
       it('is displayed by default', () => {
         wrapper = shallow(<PlacesAutocomplete inputProps={testInputProps} autocompleteItem={autocompleteItem} />)
         wrapper.setState({ autocompleteItems: data })
-        expect(wrapper.find('#PlacesAutocomplete__google-logo')).to.have.length(1)
+        expect(wrapper.find('#PlacesAutocomplete__google-logo')).to.have.length(0)
       })
 
       it('is not displayed when toggled off', () => {
